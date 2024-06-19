@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora Comigo?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #botao-sim,
+        #botao-nao {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        } 
+        #botao {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #botoes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="botoes-container">
+        <button id="botao">Namora comigo?</button>
+        <button id="botao-sim">Sim</button>
+        <button id="botao-nao">Não</button>
+    </div>
+
+    <script>
+        const botaoSim = document.getElementById('botao-sim');
+        const botaoNao = document.getElementById('botao-nao');
+        const videoUrl = 'https://www.youtube.com/watch?v=kQ2ZFVJNMs0';
+
+        botaoSim.addEventListener('click', () => {
+            window.location.href = videoUrl;
+        });
+
+        botaoNao.addEventListener('click', () => {
+            // Implemente a animação de pulo aqui (não implementado neste exemplo)
+        });
+    </script>
+</body>
+</html>
